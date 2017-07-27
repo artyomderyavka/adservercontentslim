@@ -1,0 +1,2 @@
+'/content/hello/{name}': 'Services\Content\Controller\HelloController:hello'
+'/content/goodbye/{name}': 'Services\Content\Controller\HelloController:goodbye'
