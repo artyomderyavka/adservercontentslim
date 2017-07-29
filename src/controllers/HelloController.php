@@ -10,9 +10,11 @@ namespace Services\Content\Controller;
 
 use \Psr\Http\Message\ServerRequestInterface as Request;
 use \Psr\Http\Message\ResponseInterface as Response;
+use \AdServer\Controller as Controller;
 
 
-class HelloController {
+class HelloController extends Controller
+{
     /**
      * @param Request $request
      * @param Response $response
