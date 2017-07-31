@@ -29,8 +29,10 @@ class HelloController extends Controller
 
     public function goodbye(Request $request, Response $response, $arguments) {
         $name = $request->getAttribute('name');
-        $response->getBody()->write("Goodbye from CONTENT, $name");
+        $data = new \StdClass();
+        $data->message = "Goodbye from CONTENT, $name";
 
-        return $response;
+
+        return $response->withJson($data);
     }
 }
